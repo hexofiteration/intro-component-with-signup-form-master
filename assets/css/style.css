@@ -26,3 +26,23 @@
   font-weight: 700;
   font-style: normal;
 }
+
+:root {
+  --Red-400: hsl(0, 100%, 74%);
+  --Green-400: hsl(154, 59%, 51%);
+  --Purple-700: hsl(248, 32%, 49%);
+  --Gray-900: hsl(249, 10%, 26%);
+  --Purple-350: hsl(246, 25%, 77%);
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
