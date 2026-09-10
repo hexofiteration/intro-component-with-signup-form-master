@@ -1,40 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  Learn to code by watching others
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+  <body class="flex-container">
+    <main class="main flex-container">
+      <article class="main-text">
+        <h1 class="article-heading">Learn to code by watching others</h1>
 
-  Try it free 7 days then $20/mo. thereafter
+        <p class="article-detail">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </article>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+      <div class="offer-card">
+        <p class="offer-card-text">
+          <span class="offer-card-title">Try it free 7 days</span>
+          <span class="offer-card-detail"> then $20/mo. thereafter</span>
+        </p>
+      </div>
 
-  Claim your free trial 
+      <form class="form" novalidate>
+        <div class="form-group">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name "
+          />
+          <p class="error-message"></p>
+        </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
-  
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        <div class="form-group">
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="" id="" placeholder="Email Address" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="" id="" placeholder="Password" />
+          <p class="error-message"></p>
+        </div>
+        <button type="submit">Claim your free trial</button>
+        <p class="terms">
+          By clicking the button, you are agreeing to our
+          <a href="#" class="terms-link">Terms and Services</a>
+        </p>
+      </form>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </footer>
-</body>
+  </body>
 </html>
