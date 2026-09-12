@@ -117,6 +117,12 @@ input::placeholder,
 .article-detail {
   line-height: 1.6;
 }
+
+/****** offer-card ******/
 .offer-card {
-  background-color: v;
+  background-color: var(--Purple-700);
+  padding: var(--spacing-l) var(--spacing-3xl);
+  text-align: center;
+  border-radius: 8px;
+  margin: var(--spacing-l);
 }
