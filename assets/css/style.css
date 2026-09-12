@@ -48,6 +48,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex-container {
+  display: flex;
+}
+footer {
+  flex: 0 1 50px;
+}
 /***** Typography *****/
 
 body,
@@ -79,4 +90,12 @@ input::placeholder,
 .terms,
 .terms-link {
   font-size: 0.75rem;
+}
+
+/*** main ***/
+.main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
 }
