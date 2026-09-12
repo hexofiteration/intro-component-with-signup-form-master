@@ -34,6 +34,7 @@
   --Gray-900: hsl(249, 10%, 26%);
   --Purple-350: hsl(246, 25%, 77%);
   --white: hsl(0, 100%, 100%);
+  --black: hsla(0, 0%, 0%, 0.2);
 
   --spacing-s: 0.5rem;
   --spacing-m: 1rem;
@@ -125,4 +126,5 @@ input::placeholder,
   text-align: center;
   border-radius: 8px;
   margin: var(--spacing-l);
+  box-shadow: var(--black) 0 8px;
 }
