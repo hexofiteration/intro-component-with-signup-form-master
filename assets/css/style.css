@@ -39,6 +39,8 @@
   --spacing-m: 1rem;
   --spacing-l: 1.5rem;
   --spacing-xl: 2rem;
+  --spacing-2xl: 2.5rem;
+  --spacing-3xl: 3rem;
 }
 
 *,
@@ -94,10 +96,27 @@ input::placeholder,
   font-size: 0.75rem;
 }
 
-/*** main ***/
+/****** main ******/
 .main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-grow: 2;
+  padding: 0 var(--spacing-l);
+}
+
+/****** article ******/
+.main-text {
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+}
+.article-heading {
+  font-size: 1.875rem;
+  margin-bottom: var(--spacing-xl);
+}
+.article-detail {
+  line-height: 1.6;
+}
+.offer-card {
+  background-color: v;
 }
