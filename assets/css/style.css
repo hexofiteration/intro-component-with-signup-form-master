@@ -42,7 +42,8 @@ footer {
 /***** Typography *****/
 
 body,
-button {
+button,
+.offer-card-title {
   color: var(--white);
 }
 
@@ -67,7 +68,9 @@ input::placeholder,
 .terms-link {
   font-size: 0.75rem;
 }
-
+main a {
+  text-decoration: none;
+}
 /****** main ******/
 .main {
   flex-direction: column;
@@ -99,6 +102,8 @@ input::placeholder,
   margin: var(--spacing-l);
   box-shadow: var(--black) 0 8px;
 }
+.offer-card-title {
+}
 
 /****** form ******/
 .form {
@@ -119,8 +124,6 @@ input {
   border: 1px solid var(--Purple-350);
   padding-left: var(--spacing-m);
 }
-input::placeholder {
-}
 
 button {
   border: none;
@@ -133,7 +136,6 @@ button {
   color: var(--Purple-350);
 }
 .terms-link {
-  text-decoration: none;
   color: var(--Red-400);
   font-weight: 700;
 }
