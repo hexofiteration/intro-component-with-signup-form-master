@@ -1,35 +1,9 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.ttf");
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Medium.ttf");
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.ttf");
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Bold.ttf");
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
   --Red-400: hsl(0, 100%, 74%);
   --Green-400: hsl(154, 59%, 51%);
+  --Green-dark: hsl(154, 57%, 42%);
   --Purple-700: hsl(248, 32%, 49%);
   --Gray-900: hsl(249, 10%, 26%);
   --Purple-350: hsl(246, 25%, 77%);
@@ -63,6 +37,7 @@ body {
 }
 footer {
   flex: 0 1 50px;
+  padding-top: var(--spacing-l);
 }
 /***** Typography *****/
 
@@ -87,10 +62,6 @@ input::placeholder,
 }
 .article-detail {
   font-weight: 500;
-}
-input::placeholder,
-.terms {
-  color: var(--Gray-900);
 }
 .terms,
 .terms-link {
@@ -127,4 +98,42 @@ input::placeholder,
   border-radius: 8px;
   margin: var(--spacing-l);
   box-shadow: var(--black) 0 8px;
+}
+
+/****** form ******/
+.form {
+  background-color: var(--white);
+  padding: var(--spacing-l);
+  border-radius: 8px;
+  box-shadow: var(--black) 0 8px;
+  margin-bottom: var(--spacing-m);
+}
+input,
+button {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-m);
+}
+input {
+  border: 1px solid var(--Purple-350);
+  padding-left: var(--spacing-m);
+}
+input::placeholder {
+}
+
+button {
+  border: none;
+  background-color: var(--Green-400);
+  text-transform: uppercase;
+  box-shadow: var(--Green-dark) 0 5px;
+}
+
+.terms {
+  color: var(--Purple-350);
+}
+.terms-link {
+  text-decoration: none;
+  color: var(--Red-400);
+  font-weight: 700;
 }
