@@ -57,9 +57,11 @@ input {
 }
 .offer-card-title,
 button,
-input::placeholder,
 .terms-link {
   font-weight: 700;
+}
+input::placeholder {
+  font-weight: 600;
 }
 .article-detail {
   font-weight: 500;
@@ -101,8 +103,6 @@ main a {
   border-radius: 8px;
   margin: var(--spacing-l);
   box-shadow: var(--black) 0 8px;
-}
-.offer-card-title {
 }
 
 /****** form ******/
