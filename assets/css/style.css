@@ -101,10 +101,10 @@ main a {
 /****** offer-card ******/
 .offer-card {
   background-color: var(--Purple-700);
-  padding: var(--spacing-l) var(--spacing-3xl);
+  padding: var(--spacing-l);
+  margin: var(--spacing-l) 0;
   text-align: center;
   border-radius: 8px;
-  margin: var(--spacing-l);
   box-shadow: var(--black) 0 8px;
 }
 
@@ -150,10 +150,6 @@ button {
 @media (min-width: 481px) {
   .main {
     max-width: 400px;
-  }
-  .offer-card {
-    padding: var(--spacing-l);
-    margin: var(--spacing-l) 0;
   }
 }
 
