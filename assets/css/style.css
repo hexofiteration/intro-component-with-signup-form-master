@@ -27,7 +27,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url("../images/bg-intro-mobile.png");
+  background-image: url("../images/bg-intro-mobile.png");
   background-color: var(--Red-400);
   min-height: 100vh;
   flex-direction: column;
@@ -164,7 +164,7 @@ button {
 
 @media (min-width: 992px) {
   body {
-    background: url("../images/bg-intro-desktop.png");
+    background-image: url("../images/bg-intro-desktop.png");
   }
   .main {
     max-width: 850px;
