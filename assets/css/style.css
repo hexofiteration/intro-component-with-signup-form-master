@@ -121,6 +121,9 @@ button {
   height: 50px;
   width: 100%;
   border-radius: 5px;
+}
+.form-group,
+button {
   margin-bottom: var(--spacing-m);
 }
 input {
@@ -145,6 +148,25 @@ button {
 .terms-link {
   color: var(--Red-400);
   font-weight: 700;
+}
+
+/****** error ******/
+.form-group {
+  position: relative;
+}
+.error {
+  text-align: end;
+}
+.error-icon {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.8rem;
+  /* transform: translateY(-30%); */
+}
+.error-message {
+  margin-top: var(--spacing-s);
+  color: var(--Red-400);
+  font-size: 0.675rem;
 }
 
 @media (min-width: 481px) {
