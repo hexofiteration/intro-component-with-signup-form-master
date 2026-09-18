@@ -132,8 +132,11 @@ input {
   padding-left: var(--spacing-m);
 }
 input:focus {
-  border: none;
-  outline: 1px solid var(--Gray-900);
+  outline: none;
+  border: 1px solid var(--Gray-900);
+}
+input:focus:invalid {
+  border-color: var(--Red-400);
 }
 button {
   border: none;
@@ -149,11 +152,15 @@ button {
   color: var(--Red-400);
   font-weight: 700;
 }
-
-/****** error ******/
 .form-group {
   position: relative;
 }
+input[type="email"]:invalid {
+  color: var(--Red-400);
+}
+
+/****** error ******/
+
 .error {
   text-align: end;
 }
@@ -161,14 +168,15 @@ button {
   position: absolute;
   right: 1.5rem;
   top: 0.8rem;
-  /* transform: translateY(-30%); */
 }
 .error-message {
   margin-top: var(--spacing-s);
   color: var(--Red-400);
   font-size: 0.675rem;
 }
-
+.hide {
+  display: none;
+}
 @media (min-width: 481px) {
   .main {
     max-width: 400px;
