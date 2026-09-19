@@ -95,4 +95,4 @@ input.nextElementSibling.classList.remove("hide");
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/hexofiteration)
+- Frontend Mentor - [@hexofiteration](https://www.frontendmentor.io/profile/hexofiteration)
